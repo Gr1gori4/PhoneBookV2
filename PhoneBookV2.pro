@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,13 +26,14 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        phonebook.cpp
+        phonebook.cpp \
+    formaddindividuals.cpp
 
 HEADERS += \
-        phonebook.h
+        phonebook.h \
+    formaddindividuals.h
 
-FORMS += \
-        phonebook.ui
+FORMS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

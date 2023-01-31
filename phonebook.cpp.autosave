@@ -131,7 +131,7 @@ PhoneBook::PhoneBook(QWidget *parent) :
     modeldb->setTable("Records");
     modeldb->select();
     ptable->setModel(modeldb);
-
+    
 }
 
 PhoneBook::~PhoneBook()

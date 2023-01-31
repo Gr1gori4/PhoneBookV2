@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
 
     QFile styleF;
     styleF.setFileName(":/style/style.css");
-    if (!styleF.open(QFile::ReadOnly)) qDebug() << "Ошибка при открытии файла чтения CSS";
+    if (!styleF.open(QFile::ReadOnly))
+        qDebug() << "Ошибка при открытии файла чтения CSS";
     phonebook.setStyleSheet(styleF.readAll());
 
     phonebook.show();
